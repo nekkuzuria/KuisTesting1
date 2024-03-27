@@ -19,12 +19,6 @@ public class BankAccountTest {
         shillaBank = new BankAccount("13133", 20000);
     }
 
-    @AfterEach
-    void tearDown(){
-        // Mengosongkan isi bank
-        myBank.withdraw(myBank.getBalance());
-    }
-
     @Test
     void testGetAccountNumer(){
         assertEquals("24776", myBank.getAccountNumber());
