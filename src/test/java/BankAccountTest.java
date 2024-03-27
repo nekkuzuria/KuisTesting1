@@ -63,7 +63,7 @@ public class BankAccountTest {
     }
 
     @Test
-    void negativeTransferFunds(){
+    void testNegativeTransferFunds(){
         exception = assertThrows(IllegalArgumentException.class,
                 () -> myBank.transferFunds(shillaBank, 20000));
         assertEquals("Insufficient funds for transfer.", exception.getMessage());
